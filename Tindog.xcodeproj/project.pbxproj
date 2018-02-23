@@ -12,9 +12,11 @@
 		8420475D203FBF1D006B7EF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8420475B203FBF1D006B7EF2 /* Main.storyboard */; };
 		8420475F203FBF1D006B7EF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8420475E203FBF1D006B7EF2 /* Assets.xcassets */; };
 		84204762203FBF1D006B7EF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84204760203FBF1D006B7EF2 /* LaunchScreen.storyboard */; };
+		D9FB6DFC9F3A5FFAADC64240 /* Pods_Tindog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300987867A1E8CD8EEA06084 /* Pods_Tindog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300987867A1E8CD8EEA06084 /* Pods_Tindog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tindog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84204754203FBF1D006B7EF2 /* Tindog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84204757203FBF1D006B7EF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84204759203FBF1D006B7EF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		8420475E203FBF1D006B7EF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84204761203FBF1D006B7EF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84204763203FBF1D006B7EF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0CBBD85B8E165C27A097398 /* Pods-Tindog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tindog/Pods-Tindog.debug.xcconfig"; sourceTree = "<group>"; };
+		C0999F58257E6BFD66B1674B /* Pods-Tindog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindog.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tindog/Pods-Tindog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FB6DFC9F3A5FFAADC64240 /* Pods_Tindog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				84204756203FBF1D006B7EF2 /* Tindog */,
 				84204755203FBF1D006B7EF2 /* Products */,
+				FB332FE924782A5F5E42FB2A /* Pods */,
+				EA9CE595AA1CEB483008F86C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Tindog;
 			sourceTree = "<group>";
 		};
+		EA9CE595AA1CEB483008F86C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				300987867A1E8CD8EEA06084 /* Pods_Tindog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB332FE924782A5F5E42FB2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0CBBD85B8E165C27A097398 /* Pods-Tindog.debug.xcconfig */,
+				C0999F58257E6BFD66B1674B /* Pods-Tindog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84204766203FBF1D006B7EF2 /* Build configuration list for PBXNativeTarget "Tindog" */;
 			buildPhases = (
+				5995181CE38045D66ED45A22 /* [CP] Check Pods Manifest.lock */,
 				84204750203FBF1D006B7EF2 /* Sources */,
 				84204751203FBF1D006B7EF2 /* Frameworks */,
 				84204752203FBF1D006B7EF2 /* Resources */,
+				C00E4B75F84D8EEC5FF324AC /* [CP] Embed Pods Frameworks */,
+				022FA637A37DF2352427D043 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		022FA637A37DF2352427D043 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tindog/Pods-Tindog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5995181CE38045D66ED45A22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tindog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C00E4B75F84D8EEC5FF324AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tindog/Pods-Tindog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tindog/Pods-Tindog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84204750203FBF1D006B7EF2 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		84204767203FBF1D006B7EF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CBBD85B8E165C27A097398 /* Pods-Tindog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		84204768203FBF1D006B7EF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0999F58257E6BFD66B1674B /* Pods-Tindog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
